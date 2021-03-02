@@ -3,18 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		05CE233B25EEC31700400012 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CE233A25EEC31700400012 /* AppDelegate.swift */; };
-		05CE233D25EEC31700400012 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CE233C25EEC31700400012 /* SceneDelegate.swift */; };
-		05CE233F25EEC31700400012 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CE233E25EEC31700400012 /* ViewController.swift */; };
-		05CE234225EEC31700400012 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05CE234025EEC31700400012 /* Main.storyboard */; };
 		05CE234425EEC31D00400012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05CE234325EEC31D00400012 /* Assets.xcassets */; };
 		05CE234725EEC31D00400012 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05CE234525EEC31D00400012 /* LaunchScreen.storyboard */; };
 		05CE235225EEC31D00400012 /* UalaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CE235125EEC31D00400012 /* UalaTests.swift */; };
 		05CE235D25EEC31D00400012 /* UalaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CE235C25EEC31D00400012 /* UalaUITests.swift */; };
+		05CE239A25EEDAD600400012 /* UalaNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = 05CE239925EEDAD600400012 /* UalaNetwork */; };
+		05CE23A725EEDD5B00400012 /* SearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05CE23A625EEDD5B00400012 /* SearchViewController.storyboard */; };
+		05CE23AC25EEDDA000400012 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CE23AB25EEDDA000400012 /* SearchViewModel.swift */; };
+		05CE23B125EEDDB200400012 /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CE23B025EEDDB200400012 /* SearchRouter.swift */; };
+		05CE23B625EEDDBD00400012 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CE23B525EEDDBD00400012 /* SearchViewController.swift */; };
+		05CE23BB25EEDDC800400012 /* SearchBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CE23BA25EEDDC800400012 /* SearchBuilder.swift */; };
+		05CE23C125EEE0BF00400012 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 05CE23C025EEE0BF00400012 /* RxCocoa */; };
+		05CE23D825EEE2C700400012 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CE23D725EEE2C700400012 /* ViewModelProtocol.swift */; };
+		05CE23DD25EEE2E900400012 /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CE23DC25EEE2E900400012 /* RouterProtocol.swift */; };
+		05CE23E225EEE32700400012 /* ViewModelDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CE23E125EEE32700400012 /* ViewModelDataSourceProtocol.swift */; };
+		05CE23E725EEE33C00400012 /* ViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CE23E625EEE33C00400012 /* ViewControllerProtocol.swift */; };
+		05CE23F825EEE5E400400012 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CE23F725EEE5E400400012 /* Context.swift */; };
+		05CE240E25EEEFF000400012 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CE240D25EEEFF000400012 /* Builder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +47,6 @@
 /* Begin PBXFileReference section */
 		05CE233725EEC31700400012 /* Uala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Uala.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05CE233A25EEC31700400012 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		05CE233C25EEC31700400012 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		05CE233E25EEC31700400012 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		05CE234125EEC31700400012 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05CE234325EEC31D00400012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05CE234625EEC31D00400012 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05CE234825EEC31D00400012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +56,17 @@
 		05CE235825EEC31D00400012 /* UalaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UalaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05CE235C25EEC31D00400012 /* UalaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UalaUITests.swift; sourceTree = "<group>"; };
 		05CE235E25EEC31D00400012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05CE23A625EEDD5B00400012 /* SearchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchViewController.storyboard; sourceTree = "<group>"; };
+		05CE23AB25EEDDA000400012 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		05CE23B025EEDDB200400012 /* SearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouter.swift; sourceTree = "<group>"; };
+		05CE23B525EEDDBD00400012 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		05CE23BA25EEDDC800400012 /* SearchBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBuilder.swift; sourceTree = "<group>"; };
+		05CE23D725EEE2C700400012 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		05CE23DC25EEE2E900400012 /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
+		05CE23E125EEE32700400012 /* ViewModelDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelDataSourceProtocol.swift; sourceTree = "<group>"; };
+		05CE23E625EEE33C00400012 /* ViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerProtocol.swift; sourceTree = "<group>"; };
+		05CE23F725EEE5E400400012 /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
+		05CE240D25EEEFF000400012 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05CE23C125EEE0BF00400012 /* RxCocoa in Frameworks */,
+				05CE239A25EEDAD600400012 /* UalaNetwork in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,13 +119,12 @@
 		05CE233925EEC31700400012 /* Uala */ = {
 			isa = PBXGroup;
 			children = (
+				05CE23D625EEE2AF00400012 /* MVVM */,
 				05CE233A25EEC31700400012 /* AppDelegate.swift */,
-				05CE233C25EEC31700400012 /* SceneDelegate.swift */,
-				05CE233E25EEC31700400012 /* ViewController.swift */,
-				05CE234025EEC31700400012 /* Main.storyboard */,
 				05CE234325EEC31D00400012 /* Assets.xcassets */,
 				05CE234525EEC31D00400012 /* LaunchScreen.storyboard */,
 				05CE234825EEC31D00400012 /* Info.plist */,
+				05CE23A425EEDD0300400012 /* Modules */,
 			);
 			path = Uala;
 			sourceTree = "<group>";
@@ -128,6 +147,39 @@
 			path = UalaUITests;
 			sourceTree = "<group>";
 		};
+		05CE23A425EEDD0300400012 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				05CE23A525EEDD1300400012 /* Search */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		05CE23A525EEDD1300400012 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				05CE23A625EEDD5B00400012 /* SearchViewController.storyboard */,
+				05CE23B525EEDDBD00400012 /* SearchViewController.swift */,
+				05CE23AB25EEDDA000400012 /* SearchViewModel.swift */,
+				05CE23B025EEDDB200400012 /* SearchRouter.swift */,
+				05CE23BA25EEDDC800400012 /* SearchBuilder.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		05CE23D625EEE2AF00400012 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				05CE23D725EEE2C700400012 /* ViewModelProtocol.swift */,
+				05CE23DC25EEE2E900400012 /* RouterProtocol.swift */,
+				05CE23E125EEE32700400012 /* ViewModelDataSourceProtocol.swift */,
+				05CE23E625EEE33C00400012 /* ViewControllerProtocol.swift */,
+				05CE23F725EEE5E400400012 /* Context.swift */,
+				05CE240D25EEEFF000400012 /* Builder.swift */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +196,10 @@
 			dependencies = (
 			);
 			name = Uala;
+			packageProductDependencies = (
+				05CE239925EEDAD600400012 /* UalaNetwork */,
+				05CE23C025EEE0BF00400012 /* RxCocoa */,
+			);
 			productName = Uala;
 			productReference = 05CE233725EEC31700400012 /* Uala.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +271,10 @@
 				Base,
 			);
 			mainGroup = 05CE232E25EEC31700400012;
+			packageReferences = (
+				05CE239825EEDAD600400012 /* XCRemoteSwiftPackageReference "uala-uala-network" */,
+				05CE23BF25EEE0BF00400012 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 05CE233825EEC31700400012 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +293,7 @@
 			files = (
 				05CE234725EEC31D00400012 /* LaunchScreen.storyboard in Resources */,
 				05CE234425EEC31D00400012 /* Assets.xcassets in Resources */,
-				05CE234225EEC31700400012 /* Main.storyboard in Resources */,
+				05CE23A725EEDD5B00400012 /* SearchViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +318,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05CE233F25EEC31700400012 /* ViewController.swift in Sources */,
+				05CE23DD25EEE2E900400012 /* RouterProtocol.swift in Sources */,
+				05CE23D825EEE2C700400012 /* ViewModelProtocol.swift in Sources */,
+				05CE23E725EEE33C00400012 /* ViewControllerProtocol.swift in Sources */,
+				05CE23B625EEDDBD00400012 /* SearchViewController.swift in Sources */,
+				05CE23F825EEE5E400400012 /* Context.swift in Sources */,
+				05CE23B125EEDDB200400012 /* SearchRouter.swift in Sources */,
+				05CE23E225EEE32700400012 /* ViewModelDataSourceProtocol.swift in Sources */,
+				05CE23BB25EEDDC800400012 /* SearchBuilder.swift in Sources */,
 				05CE233B25EEC31700400012 /* AppDelegate.swift in Sources */,
-				05CE233D25EEC31700400012 /* SceneDelegate.swift in Sources */,
+				05CE23AC25EEDDA000400012 /* SearchViewModel.swift in Sources */,
+				05CE240E25EEEFF000400012 /* Builder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +364,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		05CE234025EEC31700400012 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				05CE234125EEC31700400012 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		05CE234525EEC31D00400012 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -593,6 +653,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		05CE239825EEDAD600400012 /* XCRemoteSwiftPackageReference "uala-uala-network" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mikeshep/uala-uala-network.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+		05CE23BF25EEE0BF00400012 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		05CE239925EEDAD600400012 /* UalaNetwork */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05CE239825EEDAD600400012 /* XCRemoteSwiftPackageReference "uala-uala-network" */;
+			productName = UalaNetwork;
+		};
+		05CE23C025EEE0BF00400012 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05CE23BF25EEE0BF00400012 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 05CE232F25EEC31700400012 /* Project object */;
 }
