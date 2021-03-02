@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aED-Z7-aCb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Meal Detail-->
+        <scene sceneID="EZl-pA-gNx">
+            <objects>
+                <viewController title="Meal Detail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aED-Z7-aCb" customClass="DetailViewController" customModule="Uala" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xNc-Sx-Vbz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZA-E3-sAP">
+                                <rect key="frame" x="12" y="92" width="390" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QGw-RF-n7w">
+                                <rect key="frame" x="12" y="156" width="390" height="656"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XlG-cI-OTS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NZA-E3-sAP" firstAttribute="leading" secondItem="XlG-cI-OTS" secondAttribute="leading" constant="12" id="19M-d1-HmE"/>
+                            <constraint firstItem="QGw-RF-n7w" firstAttribute="leading" secondItem="XlG-cI-OTS" secondAttribute="leading" constant="12" id="1Zf-x6-JoK"/>
+                            <constraint firstItem="XlG-cI-OTS" firstAttribute="bottom" secondItem="QGw-RF-n7w" secondAttribute="bottom" constant="50" id="JcL-jO-99p"/>
+                            <constraint firstItem="XlG-cI-OTS" firstAttribute="trailing" secondItem="NZA-E3-sAP" secondAttribute="trailing" constant="12" id="L61-Xr-M1h"/>
+                            <constraint firstItem="XlG-cI-OTS" firstAttribute="trailing" secondItem="QGw-RF-n7w" secondAttribute="trailing" constant="12" id="NX7-Fa-dKU"/>
+                            <constraint firstItem="NZA-E3-sAP" firstAttribute="top" secondItem="XlG-cI-OTS" secondAttribute="top" constant="48" id="dM1-7d-WFw"/>
+                            <constraint firstItem="QGw-RF-n7w" firstAttribute="top" secondItem="NZA-E3-sAP" secondAttribute="bottom" constant="40" id="dOD-Rp-OLY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ingredientsTextView" destination="QGw-RF-n7w" id="CER-oj-KmD"/>
+                        <outlet property="titleLabel" destination="NZA-E3-sAP" id="Vsz-18-hCL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dp7-ii-85Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1459.4202898550725" y="-192.1875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

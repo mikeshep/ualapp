@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0565AC3425EEF5BE00757AB1 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0565AC3325EEF5BE00757AB1 /* Detail.storyboard */; };
+		0565AC3925EEF67E00757AB1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0565AC3825EEF67E00757AB1 /* DetailViewController.swift */; };
+		0565AC3E25EEF72200757AB1 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0565AC3D25EEF72200757AB1 /* DetailViewModel.swift */; };
+		0565AC4325EEF73700757AB1 /* DetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0565AC4225EEF73700757AB1 /* DetailBuilder.swift */; };
+		0565AC4825EEF7BA00757AB1 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0565AC4725EEF7BA00757AB1 /* DetailRouter.swift */; };
 		05CE233B25EEC31700400012 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CE233A25EEC31700400012 /* AppDelegate.swift */; };
 		05CE234425EEC31D00400012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05CE234325EEC31D00400012 /* Assets.xcassets */; };
 		05CE234725EEC31D00400012 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05CE234525EEC31D00400012 /* LaunchScreen.storyboard */; };
@@ -45,6 +50,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0565AC3325EEF5BE00757AB1 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		0565AC3825EEF67E00757AB1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		0565AC3D25EEF72200757AB1 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		0565AC4225EEF73700757AB1 /* DetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBuilder.swift; sourceTree = "<group>"; };
+		0565AC4725EEF7BA00757AB1 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
 		05CE233725EEC31700400012 /* Uala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Uala.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05CE233A25EEC31700400012 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05CE234325EEC31D00400012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,6 +106,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0565AC2F25EEF5A700757AB1 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				0565AC3325EEF5BE00757AB1 /* Detail.storyboard */,
+				0565AC3825EEF67E00757AB1 /* DetailViewController.swift */,
+				0565AC3D25EEF72200757AB1 /* DetailViewModel.swift */,
+				0565AC4225EEF73700757AB1 /* DetailBuilder.swift */,
+				0565AC4725EEF7BA00757AB1 /* DetailRouter.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		05CE232E25EEC31700400012 = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +172,7 @@
 		05CE23A425EEDD0300400012 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				0565AC2F25EEF5A700757AB1 /* Detail */,
 				05CE23A525EEDD1300400012 /* Search */,
 			);
 			path = Modules;
@@ -294,6 +317,7 @@
 				05CE234725EEC31D00400012 /* LaunchScreen.storyboard in Resources */,
 				05CE234425EEC31D00400012 /* Assets.xcassets in Resources */,
 				05CE23A725EEDD5B00400012 /* SearchViewController.storyboard in Resources */,
+				0565AC3425EEF5BE00757AB1 /* Detail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,14 +342,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0565AC4825EEF7BA00757AB1 /* DetailRouter.swift in Sources */,
+				0565AC4325EEF73700757AB1 /* DetailBuilder.swift in Sources */,
 				05CE23DD25EEE2E900400012 /* RouterProtocol.swift in Sources */,
 				05CE23D825EEE2C700400012 /* ViewModelProtocol.swift in Sources */,
 				05CE23E725EEE33C00400012 /* ViewControllerProtocol.swift in Sources */,
+				0565AC3925EEF67E00757AB1 /* DetailViewController.swift in Sources */,
 				05CE23B625EEDDBD00400012 /* SearchViewController.swift in Sources */,
 				05CE23F825EEE5E400400012 /* Context.swift in Sources */,
 				05CE23B125EEDDB200400012 /* SearchRouter.swift in Sources */,
 				05CE23E225EEE32700400012 /* ViewModelDataSourceProtocol.swift in Sources */,
 				05CE23BB25EEDDC800400012 /* SearchBuilder.swift in Sources */,
+				0565AC3E25EEF72200757AB1 /* DetailViewModel.swift in Sources */,
 				05CE233B25EEC31700400012 /* AppDelegate.swift in Sources */,
 				05CE23AC25EEDDA000400012 /* SearchViewModel.swift in Sources */,
 				05CE240E25EEEFF000400012 /* Builder.swift in Sources */,
@@ -660,7 +688,7 @@
 			repositoryURL = "https://github.com/mikeshep/uala-uala-network.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.3;
+				minimumVersion = 1.0.6;
 			};
 		};
 		05CE23BF25EEE0BF00400012 /* XCRemoteSwiftPackageReference "RxSwift" */ = {

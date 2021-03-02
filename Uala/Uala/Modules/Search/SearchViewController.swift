@@ -23,8 +23,8 @@ class SearchViewController : UIViewController, ViewControllerProtocol, UITableVi
         super.viewDidLoad()
         
         viewModel.items.bind(to: tableView.rx.items(cellIdentifier: "Cell", cellType: UITableViewCell.self)) { (row, element, cell) in
-                cell.textLabel?.text = "\(element)"
-                
+                cell.textLabel?.text = "\(element.strMeal)"
+                cell.detailTextLabel?.text = "\(element.strCategory)"
             }
             .disposed(by: disposeBag)
 
@@ -32,6 +32,9 @@ class SearchViewController : UIViewController, ViewControllerProtocol, UITableVi
             .modelSelected(String.self)
             .subscribe(onNext:  { value in
                 debugPrint("Tapper")
+                let context = Context()
+                let dataSource = DetailViewModelDataSource(context: context, id: "52802")
+                DetailBuilder.build(with: dataSource)
             })
             .disposed(by: disposeBag)
         
