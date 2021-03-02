@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0565AC3425EEF5BE00757AB1 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0565AC3325EEF5BE00757AB1 /* Detail.storyboard */; };
+		0565AC3425EEF5BE00757AB1 /* DetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0565AC3325EEF5BE00757AB1 /* DetailViewController.storyboard */; };
 		0565AC3925EEF67E00757AB1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0565AC3825EEF67E00757AB1 /* DetailViewController.swift */; };
 		0565AC3E25EEF72200757AB1 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0565AC3D25EEF72200757AB1 /* DetailViewModel.swift */; };
 		0565AC4325EEF73700757AB1 /* DetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0565AC4225EEF73700757AB1 /* DetailBuilder.swift */; };
@@ -50,7 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0565AC3325EEF5BE00757AB1 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		0565AC3325EEF5BE00757AB1 /* DetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailViewController.storyboard; sourceTree = "<group>"; };
 		0565AC3825EEF67E00757AB1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0565AC3D25EEF72200757AB1 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		0565AC4225EEF73700757AB1 /* DetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBuilder.swift; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 		0565AC2F25EEF5A700757AB1 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				0565AC3325EEF5BE00757AB1 /* Detail.storyboard */,
+				0565AC3325EEF5BE00757AB1 /* DetailViewController.storyboard */,
 				0565AC3825EEF67E00757AB1 /* DetailViewController.swift */,
 				0565AC3D25EEF72200757AB1 /* DetailViewModel.swift */,
 				0565AC4225EEF73700757AB1 /* DetailBuilder.swift */,
@@ -317,7 +317,7 @@
 				05CE234725EEC31D00400012 /* LaunchScreen.storyboard in Resources */,
 				05CE234425EEC31D00400012 /* Assets.xcassets in Resources */,
 				05CE23A725EEDD5B00400012 /* SearchViewController.storyboard in Resources */,
-				0565AC3425EEF5BE00757AB1 /* Detail.storyboard in Resources */,
+				0565AC3425EEF5BE00757AB1 /* DetailViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

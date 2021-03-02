@@ -14,4 +14,10 @@ final class SearchRouter: RouterProtocol {
     required init(viewController: UIViewController) {
         self.viewController = viewController
     }
+    
+    func pushToDetail(with id: String) {
+        let context = Context()
+        let dataSource = DetailViewModelDataSource(context: context, id: id)
+        push(viewController: DetailBuilder.build(with: dataSource))
+    }
 }

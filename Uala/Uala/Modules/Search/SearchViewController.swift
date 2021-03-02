@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 import RxSwift
 import RxCocoa
+import UalaNetwork
 
 class SearchViewController : UIViewController, ViewControllerProtocol, UITableViewDelegate {
     
@@ -28,14 +29,10 @@ class SearchViewController : UIViewController, ViewControllerProtocol, UITableVi
             }
             .disposed(by: disposeBag)
 
-        tableView.rx
-            .modelSelected(String.self)
-            .subscribe(onNext:  { value in
-                debugPrint("Tapper")
-                let context = Context()
-                let dataSource = DetailViewModelDataSource(context: context, id: "52802")
-                DetailBuilder.build(with: dataSource)
-            })
+        tableView
+            .rx
+            .modelSelected(Meal.self)
+            .bind(to: viewModel.mealDetail)
             .disposed(by: disposeBag)
         
         searchBar.rx.text.orEmpty.changed.asObservable().subscribe { [weak self] (event) in

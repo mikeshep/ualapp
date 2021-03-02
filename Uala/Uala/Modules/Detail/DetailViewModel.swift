@@ -21,7 +21,7 @@ final class DetailViewModel: ViewModelProtocol {
     private let providerNetwork = UalaNetwork()
     let title: PublishSubject<String> = PublishSubject()
     let ingredients: PublishSubject<String> = PublishSubject()
-
+    var disposeBag = DisposeBag()
 
     init(dataSource: DetailViewModelDataSource, router: DetailRouter) {
         self.dataSource = dataSource
@@ -54,7 +54,7 @@ final class DetailViewModel: ViewModelProtocol {
             self.ingredients.onNext(ingredients)
         } onError: { (error) in
             debugPrint(error)
-        }.dispose()
+        }.disposed(by: disposeBag)
 
     }
 }
